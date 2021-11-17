@@ -4,25 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ödev 1</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Ali Güzel</h1>
-    <h3><b>Hakkımda</b></h3>
-    <p>Merhaba ben Ali. Hatayda yaşıyorum. Bilgisayar Müendisliği Bölümünden yeni mezun oldum. Yaşadığım sağlık sorunları nedeniyle yazılım konusunda kendimi geliştiremediğime inanıyorum. Yarı zamanlı bir işte çalışıyor, aynı zamanda tedavimle ilgileniyorum. Vakit ayırabildikçe patikada takılıyor ve hoş vakitler geçiriyorum.</p>
-    <h2>Deneyimler</h2>
-    <ul>
-        <li>Oyun Moderatörlüğü</li>
-        <li>Temel Mobil Uygulama Geliştirme</li>
-        <li>Unity ile Artırılmış Gerçeklik Uygulaması Geliştirme</li>
-    </ul>
-    <h2>Hobiler</h2>
-    <ul>
-        <li>Muzik Dinlemek</li>
-        <li>Oyun Oynamak</li>
-        <li>Dizi -  Film İzlemek</li>
-        <li>Yazı Yazmak</li>
-    </ul>
+    <script>
+        let email = "aliguzel96@gmail.com"
+        let firstName = "Ali"
+        let lastName = "GUZEL"
+
+    
+        //İlk Karakteri Bulma
+        console.log(email.length)
+        console.log(firstName[0])
+        console.log(firstName.charAt(0))
+
+        //buyuk/kucuk harf
+        console.log(firstName.toUpperCase())
+        console.log(firstName.toLocaleLowerCase())
+
+        //String içerisinde istenen veriyi bulma --> search
+        console.log(email.search("@"))
+        console.log(email[10])
+        
+        //belli yere kadar olanı alma --> slice
+        console.log(email.slice(0,8))
+        console.log(email.slice(email.search("@"))) //--> sadece domaini alır
+
+        //bilgiyi değiştir --> replace
+        console.log(email.replace('gmail.com',"kodluyoruz.org"))
+
+        //istediğim bilgi var mı --> includes ?
+        console.log(email.includes("ş")) // varsa true yoksa false dönderir
+
+        //istediğim bilgiyle başladı mı? bitti mi --> startsWidth, endsWidth;
+        console.log(email.endsWith("m")) // e-mail m ile bitti mi --> true
+        console.log(email.startsWith("b")) // e-mail b ile başladı mı --> false
+
+        //ilk harflerini büyük yapmak
+        firstName = "FIRST"
+        lastName = "LAST"
+
+        let fullName = `${firstName[0].toUpperCase()}${firstName.slice(1).toLowerCase()} ${lastName[0].toUpperCase()}${lastName.slice(1).toLowerCase()}`
+
+        console.log(fullName)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
     
 </body>
 </html>
